@@ -65,19 +65,19 @@
 	class="h-screen overflow-hidden bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat text-white"
 >
 	<div
-		class="flex h-screen flex-col items-center justify-center gap-10 bg-black/70 px-4 py-0
+		class="flex h-screen overflow-hidden flex-col items-center justify-center gap-10 bg-black/70 px-4 py-0
            lg:w-1/2 lg:items-end lg:px-20"
 	>
 		<WeatherSearch bind:input {loading} onSearch={fetchWeatherData} />
 
 		{#if error}
-			<div class="w-full rounded-lg bg-red-500/80 p-4 text-center lg:text-right">
+			<div class="rounded-lg bg-red-500/80 p-4 text-center lg:text-right">
 				{error}
 			</div>
 		{/if}
 
 		{#if loading}
-			<div class="w-full text-center lg:text-right">
+			<div class="text-center lg:text-right">
 				<div
 					class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent motion-reduce:animate-[spin_1.5s_linear_infinite]"
 				></div>
