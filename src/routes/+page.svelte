@@ -62,11 +62,11 @@
 </script>
 
 <div
-	class="h-screen overflow-hidden bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat text-white"
+	class="relative flex min-h-[100dvh] w-full overflow-hidden bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat text-white"
 >
 	<div
-		class="flex h-screen overflow-hidden flex-col items-center justify-center gap-10 bg-black/70 px-4 py-0
-           lg:w-1/2 lg:items-end lg:px-20"
+		class="flex w-full flex-col items-center justify-center gap-6 bg-black/70 px-4 py-6 sm:gap-8 sm:py-8 lg:w-1/2
+       lg:items-end lg:gap-10 lg:px-20"
 	>
 		<WeatherSearch bind:input {loading} onSearch={fetchWeatherData} />
 
