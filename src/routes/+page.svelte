@@ -62,28 +62,23 @@
 </script>
 
 <div
-	class="relative flex min-h-[100dvh] w-full overflow-hidden bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat text-white"
+	class="min-h-[100dvh] w-full overflow-hidden bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat text-white"
 >
 	<div
-		class="flex w-full flex-col items-center justify-center gap-6 bg-black/70 px-4 py-6 sm:gap-8 sm:py-8 lg:w-1/2
-       lg:items-end lg:gap-10 lg:px-20"
+		class="flex min-h-[100dvh] w-full flex-col items-end justify-center gap-4 bg-black/70 px-4 py-0 max-[1500px]:w-[60%] max-[1300px]:w-[70%]
+         max-[1100px]:w-full
+         max-[1100px]:items-center max-[1100px]:pt-20
+         max-[700px]:justify-start lg:w-1/2 lg:items-end
+         lg:px-20"
 	>
 		<WeatherSearch bind:input {loading} onSearch={fetchWeatherData} />
 
 		{#if error}
-			<div class="rounded-lg bg-red-500/80 p-4 text-center lg:text-right">
+			<div class="w-full rounded-lg bg-red-500/80 p-4 text-center lg:text-right">
 				{error}
 			</div>
-		{/if}
-
-		{#if loading}
-			<div class="text-center lg:text-right">
-				<div
-					class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent motion-reduce:animate-[spin_1.5s_linear_infinite]"
-				></div>
-			</div>
 		{:else}
-			<WeatherDisplay {weatherData} />
+			<WeatherDisplay {weatherData} {loading} />
 		{/if}
 	</div>
 </div>

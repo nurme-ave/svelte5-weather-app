@@ -1,52 +1,53 @@
 <script>
-	let { weatherData } = $props();
+	let { weatherData, loading } = $props();
 </script>
 
-<div class="font-medium">
-	<div class="w-full text-center lg:text-right">
-		<h2 class="mb-4 text-3xl">
-			Current weather for
-			<span class="block text-lime-500">
-				{weatherData.city}, {weatherData.country}
-			</span>
-		</h2>
+<div class="w-full text-right font-medium max-[1100px]:text-center">
+	<h2 class="mb-4 text-[2rem] max-[700px]:text-[1.5rem]">
+		Current weather for
+		<span class="block text-lime-500">
+			{weatherData.city}, {weatherData.country}
+		</span>
+	</h2>
 
-		<div class="opacity-90">
-			<div class="mb-2 flex items-center justify-center gap-2 text-3xl lg:justify-end lg:text-xl">
-				<p>{weatherData.condText}</p>
-				<img src={weatherData.condIcon} alt="weather-icon" />
-			</div>
-
-			<p class="mb-2">
-				<span class="text-3xl lg:text-4xl">{weatherData.tempC}</span>
-				<span class="ml-1 font-sans text-base lg:text-lg">℃</span>
-				<span class="mx-0.5 text-xl lg:text-base">/</span>
-				<span class="text-3xl lg:text-4xl">{weatherData.tempF}</span>
-				<span class="ml-1 font-sans text-base lg:text-lg">℉</span>
-			</p>
-
-			<p class="text-lg lg:text-xl">
-				<span class="text-base lg:text-lg">Wind speed: </span>
-				{weatherData.windKph} kmh
-				<span class="mx-0.5">/</span>
-				{weatherData.windMph} mph
-			</p>
-
-			<p class="text-lg lg:text-xl">
-				<span class="text-base lg:text-lg">Humidity: </span>
-				{weatherData.humidity}%
-			</p>
-
-			<p class="mt-12 opacity-80">
-				Powered by{' '}
-				<a
-					href="https://www.weatherapi.com/"
-					title="Free Weather API"
-					class="text-white transition-colors duration-200 hover:text-lime-500"
-				>
-					WeatherAPI.com
-				</a>
-			</p>
+	<div class="opacity-90">
+		<div
+			class="mb-2 flex items-center justify-end gap-2 text-[1.8rem]
+                   max-[1100px]:justify-center max-[700px]:text-[1.3rem]"
+		>
+			<p>{weatherData.condText}</p>
+			<img src={weatherData.condIcon} alt="weather-icon" class="h-16 w-16" />
 		</div>
+
+		<p class="mb-2">
+			<span class="text-[3rem] max-[700px]:text-[2.5rem]">{weatherData.tempC}</span>
+			<span class="ml-1 font-sans text-[1.6rem] max-[700px]:text-[1.1rem]">℃</span>
+			<span class="mx-2 text-[1.4rem] max-[700px]:text-base">/</span>
+			<span class="text-[3rem] max-[700px]:text-[2.5rem]">{weatherData.tempF}</span>
+			<span class="ml-1 font-sans text-[1.6rem] max-[700px]:text-[1.1rem]">℉</span>
+		</p>
+
+		<p class="text-[1.6rem] max-[700px]:text-[1.1rem]">
+			<span class="text-[1.3rem] max-[700px]:text-base">Wind speed: </span>
+			{weatherData.windKph} kmh
+			<span class="mx-2 text-base max-[700px]:text-[0.8rem]">/</span>
+			{weatherData.windMph} mph
+		</p>
+
+		<p class="text-[1.6rem] max-[700px]:text-[1.1rem]">
+			<span class="text-[1.3rem] max-[700px]:text-base">Humidity: </span>
+			{weatherData.humidity}%
+		</p>
+
+		<p class="mt-12 opacity-80">
+			Powered by{' '}
+			<a
+				href="https://www.weatherapi.com/"
+				title="Free Weather API"
+				class="text-white transition-colors duration-200 hover:text-lime-500"
+			>
+				WeatherAPI.com
+			</a>
+		</p>
 	</div>
 </div>
