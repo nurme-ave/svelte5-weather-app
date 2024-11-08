@@ -17,7 +17,7 @@
 		placeholder="City"
 		bind:value={input}
 		autocomplete="off"
-		class="h-16 w-full rounded-lg px-4 text-center text-lg text-black outline-none lg:text-right"
+		class="h-16 rounded-lg px-4 text-center text-lg text-black outline-none lg:text-right"
 	/>
 
 	<div class="flex justify-center lg:justify-end">

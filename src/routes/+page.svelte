@@ -65,7 +65,7 @@
 	class="min-h-screen w-full overflow-hidden bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat text-white"
 >
 	<div
-		class="flex min-h-screen w-full flex-col items-center justify-center gap-10 bg-black/70 px-4 py-0
+		class="flex min-h-screen flex-col items-center justify-center gap-10 bg-black/70 px-4 py-0
            lg:w-1/2 lg:items-end lg:px-20"
 	>
 		<WeatherSearch bind:input {loading} onSearch={fetchWeatherData} />
