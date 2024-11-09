@@ -2,7 +2,7 @@
 	let { weatherData, loading } = $props();
 </script>
 
-<div class="w-full text-right font-medium max-[1100px]:text-center">
+<div class="text-right font-medium max-[1100px]:text-center">
 	<h2 class="mb-4 text-[2rem] max-[700px]:text-[1.5rem]">
 		Current weather for
 		<span class="block text-lime-500">
