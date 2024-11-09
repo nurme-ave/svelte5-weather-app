@@ -8,10 +8,11 @@
 
 	let { data } = $props();
 
-	let input = $state('Tallinn');
-	let loading = $state(false);
-	let error = $state(data.error || '');
-	let weatherData = $state(
+	// State Management
+	let input = $state('Tallinn'); 					// Search input
+	let loading = $state(false); 						// Loading state
+	let error = $state(data.error || ''); 	// Error state
+	let weatherData = $state(								// Weather data with initial values
 		data.initialWeather || {
 			city: '',
 			country: '',
@@ -25,12 +26,15 @@
 		}
 	);
 
+	// Side Effects
 	$effect(() => {
+		// Updates document title when weather data changes
 		if (weatherData.city) {
 			document.title = `Weather in ${weatherData.city} - Weather App`;
 		}
 	});
 
+	// Data Fetching
 	async function fetchWeatherData() {
 		loading = true;
 		error = '';

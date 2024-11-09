@@ -1,3 +1,4 @@
+// Transforms API response into a cleaner format for our components
 export function transformWeatherData(data) {
 	return {
 		city: data.location.name,
