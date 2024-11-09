@@ -19,7 +19,7 @@
 			<img src={weatherData.condIcon} alt="weather-icon" class="h-16 w-16" />
 		</div>
 
-		<p class="mb-2">
+		<p class="mb-2 text-lime-500">
 			<span class="text-[3rem] max-[700px]:text-[2.5rem]">{weatherData.tempC}</span>
 			<span class="ml-1 font-sans text-[1.6rem] max-[700px]:text-[1.1rem]">℃</span>
 			<span class="mx-2 text-[1.4rem] max-[700px]:text-base">/</span>
