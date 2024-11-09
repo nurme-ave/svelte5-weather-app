@@ -9,10 +9,11 @@
 	let { data } = $props();
 
 	// State Management
-	let input = $state('Tallinn'); 					// Search input
-	let loading = $state(false); 						// Loading state
-	let error = $state(data.error || ''); 	// Error state
-	let weatherData = $state(								// Weather data with initial values
+	let input = $state('Tallinn'); // Search input
+	let loading = $state(false); // Loading state
+	let error = $state(data.error || ''); // Error state
+	let weatherData = $state(
+		// Weather data with initial values
 		data.initialWeather || {
 			city: '',
 			country: '',
@@ -50,6 +51,7 @@
 
 			const data = await response.json();
 			weatherData = transformWeatherData(data);
+			input = ''; // Clear input only after successful API call
 		} catch (err) {
 			error = err.message || 'Failed to fetch weather data';
 		} finally {

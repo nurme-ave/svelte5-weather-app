@@ -4,7 +4,7 @@
 	function handleSubmit(event) {
 		event.preventDefault();
 		if (!loading && input.trim().length >= 2) {
-			onSearch();
+			onSearch(); // Calling the function passed from parent
 		}
 	}
 </script>
