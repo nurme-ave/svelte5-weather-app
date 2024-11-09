@@ -66,19 +66,22 @@
 >
 	<div
 		class="flex min-h-[100dvh] flex-col items-end justify-center gap-4 bg-black/70 px-4 py-0 max-[1500px]:w-[60%] max-[1300px]:w-[70%]
-         max-[1100px]:w-full
-         max-[1100px]:items-center max-[1100px]:pt-20
-         max-[700px]:justify-start lg:w-1/2 lg:items-end
-         lg:px-20"
+					max-[1100px]:w-full
+					max-[1100px]:items-center max-[1100px]:pt-20
+					max-[700px]:justify-start lg:w-1/2 lg:items-end lg:px-20"
 	>
-		<WeatherSearch bind:input {loading} onSearch={fetchWeatherData} />
+		<div class="content-container w-full">
+			<WeatherSearch bind:input {loading} onSearch={fetchWeatherData} />
 
-		{#if error}
-			<div class="w-full rounded-lg bg-red-500/80 p-4 text-center lg:text-right">
-				{error}
-			</div>
-		{:else}
-			<WeatherDisplay {weatherData} {loading} />
-		{/if}
+			{#if error}
+				<div class="mb-4 text-right text-white max-[1100px]:text-center">
+					<div class="inline-block w-full max-w-[320px] rounded-lg bg-red-500/80 p-4 text-center">
+						{error}
+					</div>
+				</div>
+			{:else}
+				<WeatherDisplay {weatherData} {loading} />
+			{/if}
+		</div>
 	</div>
 </div>

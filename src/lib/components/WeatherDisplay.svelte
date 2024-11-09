@@ -13,7 +13,7 @@
 	<div class="opacity-90">
 		<div
 			class="mb-2 flex items-center justify-end gap-2 text-[1.8rem]
-                   max-[1100px]:justify-center max-[700px]:text-[1.3rem]"
+						max-[1100px]:justify-center max-[700px]:text-[1.3rem]"
 		>
 			<p>{weatherData.condText}</p>
 			<img src={weatherData.condIcon} alt="weather-icon" class="h-16 w-16" />

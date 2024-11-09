@@ -5,3 +5,9 @@
 body {
 	font-family: 'Poppins', sans-serif;
 }
+
+@layer components {
+	.content-container {
+		@apply mx-auto w-full max-w-[500px];
+	}
+}

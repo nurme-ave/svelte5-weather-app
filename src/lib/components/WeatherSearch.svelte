@@ -18,17 +18,14 @@
 			placeholder="City"
 			bind:value={input}
 			autocomplete="off"
-			class="h-16 w-72 md:w-80 rounded-lg px-0 md:px-4 text-right text-[1.3rem] text-black outline-none
-                   max-[1100px]:pr-0 max-[1100px]:text-center"
+			class="h-16 w-full max-w-[320px] rounded-lg px-0 text-right text-[1.3rem] text-black outline-none max-[1100px]:pr-0 max-[1100px]:text-center"
 		/>
 	</div>
 
 	<button
 		type="submit"
 		disabled={loading || input.trim().length < 2}
-		class="mb-4 rounded-lg bg-lime-500 px-3 py-2 text-[1.2rem] font-semibold uppercase text-black
-             transition-colors duration-200 hover:bg-lime-400 active:bg-white disabled:cursor-not-allowed
-             disabled:opacity-50"
+		class="mb-4 rounded-lg bg-lime-500 px-3 py-2 text-[1.2rem] font-semibold uppercase text-black transition-colors duration-200 disabled:opacity-50"
 	>
 		Search
 	</button>
