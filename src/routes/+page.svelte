@@ -73,7 +73,7 @@
 	<div
 		class="flex min-h-[100dvh] flex-col items-end justify-center gap-4 bg-black/70 px-4 py-0 max-[1500px]:w-[60%] max-[1300px]:w-[70%]
 					max-[1100px]:w-full
-					max-[1100px]:items-center max-[1100px]:pt-16
+					max-[1100px]:items-center max-[1100px]:pt-20
 					max-[700px]:justify-start lg:w-1/2 lg:items-end"
 	>
 		<div class="content-container w-full">
