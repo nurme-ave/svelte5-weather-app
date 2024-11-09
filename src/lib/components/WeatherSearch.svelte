@@ -9,8 +9,8 @@
 	}
 </script>
 
-<form onsubmit={handleSubmit} class="w-full text-right max-[1100px]:text-center">
-	<div class="mb-4 w-full text-right text-white max-[1100px]:text-center">
+<form onsubmit={handleSubmit} class="text-right max-[1100px]:text-center">
+	<div class="mb-4 text-right text-white max-[1100px]:text-center">
 		<input
 			type="text"
 			id="city-search"
@@ -18,7 +18,7 @@
 			placeholder="City"
 			bind:value={input}
 			autocomplete="off"
-			class="h-16 max-w-md rounded-lg px-0 md:px-4 text-right text-[1.3rem] text-black outline-none
+			class="h-16 lg:max-w-36 rounded-lg px-0 md:px-4 text-right text-[1.3rem] text-black outline-none
                    max-[1100px]:pr-0 max-[1100px]:text-center"
 		/>
 	</div>
