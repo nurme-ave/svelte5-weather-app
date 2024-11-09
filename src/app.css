@@ -8,6 +8,6 @@ body {
 
 @layer components {
 	.content-container {
-		@apply mx-auto w-full max-w-[500px];
+		@apply mx-auto w-full max-w-[500px] lg:mr-10;
 	}
 }
