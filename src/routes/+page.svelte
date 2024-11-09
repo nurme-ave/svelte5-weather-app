@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { transformWeatherData } from '$lib/utils/weather';
-	import WeatherSearch from '$lib/components/WeatherSearch.svelte';
+	import WeatherSearch from '$lib/components/weather-search/WeatherSearch.svelte';
 	import WeatherDisplay from '$lib/components/WeatherDisplay.svelte';
 
 	const API_KEY = import.meta.env.VITE_API_KEY;
