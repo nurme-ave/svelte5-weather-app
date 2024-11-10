@@ -71,10 +71,10 @@
 	class="min-h-[100dvh] overflow-hidden bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat text-white"
 >
 	<div
-		class="flex min-h-[100dvh] flex-col items-end justify-center gap-4 bg-black/70 px-4 py-2 lg:px-0 lg:py-0 max-[1500px]:w-[60%] max-[1300px]:w-[70%]
-					max-[1100px]:w-full
-					max-[1100px]:items-center max-[1100px]:pt-20
-					max-[700px]:justify-start lg:w-1/2 lg:items-end"
+		class="flex min-h-[100dvh] flex-col items-end justify-center gap-4 bg-black/70 px-4 py-2 max-[1500px]:w-[60%] max-[1300px]:w-[70%] max-[1100px]:w-full max-[1100px]:items-center
+max-[1100px]:pt-20
+max-[700px]:justify-start lg:w-1/2
+lg:items-end lg:px-0 lg:py-0"
 	>
 		<div class="content-container w-full">
 			<WeatherSearch bind:input {loading} onSearch={fetchWeatherData} />

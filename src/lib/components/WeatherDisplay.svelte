@@ -5,7 +5,7 @@
 <div class="text-right font-medium max-[1100px]:text-center">
 	<h2 class="mb-4 text-[2rem] max-[768px]:text-[1.5rem]">
 		Current weather for
-		<span class="block -mt-1 md:-mt-2 text-lime-500">
+		<span class="-mt-1 block text-lime-500 md:-mt-2">
 			{weatherData.city}, {weatherData.country}
 		</span>
 	</h2>
@@ -13,7 +13,7 @@
 	<div class="opacity-90">
 		<div
 			class="mb-2 flex items-center justify-end gap-2 text-[1.8rem]
-						max-[1100px]:justify-center max-[768px]:text-[1.3rem]"
+    max-[1100px]:justify-center max-[768px]:text-[1.3rem]"
 		>
 			<p>{weatherData.condText}</p>
 			<img src={weatherData.condIcon} alt="weather-icon" class="h-16 w-16" />

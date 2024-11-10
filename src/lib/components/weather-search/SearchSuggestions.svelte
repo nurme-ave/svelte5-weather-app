@@ -27,8 +27,8 @@
 			<button
 				type="button"
 				class="w-full px-4 py-3 text-left text-black transition-colors
-                     duration-150 hover:bg-blue-100
-                     {selectedIndex === i ? 'bg-blue-200' : ''}"
+duration-150 hover:bg-blue-100
+{selectedIndex === i ? 'bg-blue-200' : ''}"
 				onclick={() => onSelectSuggestion(suggestion)}
 				transition:fade|local={{ duration: 200, delay: i * 50 }}
 			>
