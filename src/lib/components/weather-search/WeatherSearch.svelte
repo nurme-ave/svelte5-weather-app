@@ -1,3 +1,4 @@
+<!-- WeatherSearch Component -->
 <script>
 	import { onDestroy } from 'svelte';
 	import SearchInput from './SearchInput.svelte';
@@ -7,7 +8,7 @@
 	let { input = $bindable(), loading, onSearch } = $props();
 	let suggestions = $state([]);
 	let showSuggestions = $state(false);
-	let selectedIndex = $state(-1);
+	let selectedIndex = $state(-1); // No suggestion selected
 	let loadingSuggestions = $state(false);
 	let suggestionsError = $state('');
 	let debounceTimer;

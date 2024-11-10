@@ -1,3 +1,4 @@
+// Imports
 import { transformWeatherData } from '$lib/utils/weather';
 
 // Handles server-side data loading

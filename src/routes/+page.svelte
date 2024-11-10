@@ -1,4 +1,5 @@
 <script>
+	// Imports
 	import { onMount } from 'svelte';
 	import { transformWeatherData } from '$lib/utils/weather';
 	import WeatherSearch from '$lib/components/weather-search/WeatherSearch.svelte';

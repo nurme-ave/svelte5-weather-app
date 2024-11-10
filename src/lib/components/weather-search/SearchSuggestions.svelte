@@ -1,3 +1,4 @@
+<!-- SearchSuggestion Component -->
 <script>
 	import { fade, slide } from 'svelte/transition';
 

@@ -1,3 +1,4 @@
+<!-- SearchButton Component -->
 <script>
 	let { disabled } = $props();
 </script>

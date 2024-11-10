@@ -1,3 +1,4 @@
+<!-- WeatherDisplay Component -->
 <script>
 	let { weatherData, loading } = $props();
 </script>
