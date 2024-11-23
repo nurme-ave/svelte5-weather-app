@@ -1,4 +1,3 @@
-<!-- WeatherSearch Component -->
 <script>
   import { onDestroy } from 'svelte';
   import SearchInput from './SearchInput.svelte';

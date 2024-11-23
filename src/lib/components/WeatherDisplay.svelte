@@ -1,6 +1,5 @@
-<!-- WeatherDisplay Component -->
 <script>
-  let { weatherData, loading } = $props();
+  let { weatherData } = $props();
 </script>
 
 <div class="text-right font-medium max-[1100px]:text-center">

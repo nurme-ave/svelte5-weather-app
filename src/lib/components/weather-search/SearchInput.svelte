@@ -1,4 +1,3 @@
-<!-- SearchInput Component -->
 <script>
   let { input = $bindable(), onInput, onKeydown } = $props();
 </script>
