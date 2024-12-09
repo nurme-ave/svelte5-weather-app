@@ -45,6 +45,8 @@
         href="https://www.weatherapi.com/"
         title="Free Weather API"
         class="text-white transition-colors duration-200 hover:text-lime-500"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         WeatherAPI.com
       </a>
